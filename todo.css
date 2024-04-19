@@ -1,0 +1,143 @@
+@font-face {
+  font-family: spring;
+  src: url(spring.ttf);
+}
+/*General*/
+* {
+  padding: 8px;
+  margin: 8px;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #dc7986;
+  color: #ffff;
+  font-family: spring;
+}
+
+/*header*/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header h1 {
+  font-weight: bolder;
+  font-size: 64px;
+}
+.header svg,
+.logo h1 {
+  margin: 0;
+}
+.logo {
+  width: 25%;
+  margin: 0;
+  border: 0;
+  display: flex;
+}
+.logo svg .logo h1 {
+  align-self: center;
+}
+
+/*Input section*/
+
+.main-q {
+  text-align: center;
+}
+.input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  font-size: larger;
+  border-color: #c0bebe;
+}
+.input::placeholder {
+  color: white;
+}
+.input:focus {
+  outline: none;
+  border-color: #ffff;
+}
+
+/*Todo items*/
+/*ul*/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+  background-color: inherit;
+  width: 90%;
+}
+/*li*/
+.todo-element {
+  list-style-type: none;
+  background-color: inherit;
+  justify-content: content;
+  border-radius: 10%;
+  box-shadow: rgba(0, 7, 14, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+}
+
+/*buttons*/
+.plus {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: xx-large;
+}
+
+.btn-div {
+  background-color: inherit;
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+}
+
+/*remove btn*/
+
+.remove-btn {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.remove-btn svg:hover {
+  background-color: #070101;
+  border-radius: 50%;
+}
+.remove-btn svg {
+  border-radius: 50%;
+}
+.remove-btn:hover {
+  border-radius: 50%;
+  background-color: #070101;
+}
+.remove-btn:hover svg {
+  background-color: inherit;
+}
+/*complete btn*/
+.completed-btn {
+  border: none;
+  cursor: pointer;
+}
+.completed-btn :hover {
+  border-radius: 50%;
+  background-color: #070101;
+  color: #fcf7f8;
+}
+.completed {
+  text-decoration: line-through;
+  display: flex;
+}
+
+select {
+  border-color: #fcf7f8;
+  box-sizing: content-box;
+
+}
